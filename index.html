@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Civilizaciones Celulares</title>
+    <!-- Vincula la hoja de estilos principal -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Título principal de la simulación -->
+    <h1>Simulación de Civilizaciones Celulares</h1>
+
+    <!-- Formulario para definir los parámetros iniciales de la simulación -->
+    <form id="params-form">
+        <label>
+            Tamaño del tablero:
+            <input type="number" id="size-input" min="10" max="200" value="50">
+        </label>
+        <label>
+            Número de civilizaciones:
+            <input type="number" id="civs-input" min="2" max="10" value="3">
+        </label>
+        <label>
+            Células iniciales por civ.:
+            <input type="number" id="cells-input" min="1" max="500" value="30">
+        </label>
+        <button type="submit">Iniciar Simulación</button>
+    </form>
+
+    <!-- Controles principales para la simulación -->
+    <div id="controls">
+        <button id="step-btn">Avanzar ciclo</button>                 <!-- Avanza un ciclo manualmente -->
+        <button id="auto-btn">▶️</button>                             <!-- Ejecuta/pausa la simulación automática -->
+        <button id="export-csv-btn">Descargar log CSV</button>        <!-- Descarga los resultados en CSV -->
+        <button id="dashboard-btn">Ver Metricas</button>              <!-- Abre dashboard de métricas -->
+        <button id="dashboard-avanzado-btn">Ver Analisis Avanzado</button> <!-- Abre dashboard avanzado -->
+    </div>
+
+    <!-- Panel donde se mostrarán las estadísticas de cada civilización -->
+    <div id="civ-stats"></div>
+
+    <!-- Contenedor principal que agrupa la leyenda y el tablero -->
+    <div id="main-container">
+        <div id="legend"></div>   <!-- Aquí va la leyenda de biomas/civilizaciones -->
+        <div id="board"></div>    <!-- Aquí se dibuja el tablero principal -->
+    </div>
+
+    <!-- Script principal de la aplicación (importa módulos JS modernos) -->
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>

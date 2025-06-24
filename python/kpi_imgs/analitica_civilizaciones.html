@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Analítico Civilizaciones</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #181818;
+            color: #fafafa;
+            padding-bottom: 60px;
+        }
+        h1 {
+            margin-top: 32px;
+            font-size: 2.3em;
+            color: #17aaff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Análisis Civilizaciones: KPIs</h1>
+    <div class="kpi-card">
+        <button onclick="window.open('kpi1_crecimiento_celdas.png', '_blank')">Ver Gráfico KPI 1</button><br>
+        <span class="kpi-desc">1️⃣ <b>Crecimiento territorial:</b> ¿Cuántas celdas ocupó cada civilización en el tiempo?</span>
+        <img src="kpi1_crecimiento_celdas.png" style="max-width:100%;margin:12px 0;">
+    </div>
+    <div class="kpi-card">
+        <button onclick="window.open('kpi2_edificios.png', '_blank')">Ver Gráfico KPI 2</button><br>
+        <span class="kpi-desc">2️⃣ <b>Especialización:</b> ¿En qué tipo de edificios se especializó cada civilización?</span>
+        <img src="kpi2_edificios.png" style="max-width:100%;margin:12px 0;">
+    </div>
+    <div class="kpi-card">
+        <button onclick="window.open('kpi3_fuerza_x_celda.png', '_blank')">Ver Gráfico KPI 3</button><br>
+        <span class="kpi-desc">3️⃣ <b>Eficiencia:</b> ¿Qué civilización tiene más fuerza por celda ocupada al final?</span>
+        <img src="kpi3_fuerza_x_celda.png" style="max-width:100%;margin:12px 0;">
+    </div>
+    <div class="kpi-card">
+        <button onclick="window.open('kpi4_fuerza_personalidad.png', '_blank')">Ver Gráfico KPI 4</button><br>
+        <span class="kpi-desc">4️⃣ <b>Estrategia dominante:</b> ¿Qué personalidad logra la mayor fuerza máxima?</span>
+        <img src="kpi4_fuerza_personalidad.png" style="max-width:100%;margin:12px 0;">
+    </div>
+    <div class="kpi-card">
+        <button onclick="window.open('kpi5_eventos_clave.png', '_blank')">Ver Gráfico KPI 5</button><br>
+        <span class="kpi-desc">5️⃣ <b>Eventos clave:</b> ¿En qué ciclos hubo grandes saltos de fuerza? (Guerras, conquistas)</span>
+        <img src="kpi5_eventos_clave.png" style="max-width:100%;margin:12px 0;">
+    </div>
+    <div class="kpi-card">
+        <button onclick="window.open('kpi6_promedio_personalidad.png', '_blank')">Ver Gráfico KPI 6</button><br>
+        <span class="kpi-desc">6️⃣ <b>Comparación entre personalidades:</b> ¿Qué personalidad domina en fuerza, tamaño y complejidad?</span>
+        <img src="kpi6_promedio_personalidad.png" style="max-width:100%;margin:12px 0;">
+    </div>
+    <div class="kpi-card">
+        <button onclick="window.open('kpi7_evolucion_fuerza.png', '_blank')">Ver Gráfico KPI 7</button><br>
+        <span class="kpi-desc">7️⃣ <b>Análisis temporal:</b> ¿Cómo evolucionó la fuerza de cada civilización durante la simulación?</span>
+        <img src="kpi7_evolucion_fuerza.png" style="max-width:100%;margin:12px 0;">
+    </div>
+</body>
+</html>

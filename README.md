@@ -1,3 +1,5 @@
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/DavidVilem/game_of_life)
+
 # 🏛️ Simulación de Civilizaciones Celulares
 
 Simulación visual e interactiva de civilizaciones celulares en un entorno dinámico, con analítica avanzada y exportación de resultados.
